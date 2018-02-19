@@ -37,3 +37,8 @@ atom .  #optional, use whatever text editor you want
 # 7) Scoring a strike - Finish implementing logic from #3.
 # 8) Implement scoring considering strikes - Strike scoring crossing frames still count for that frame.
 # 9) 10th Frame - If strike or spare is rolled, bowler gets extra ball.  This should make it 21 or less rolls.
+
+#References:
+<> https://www.rubyplus.com/articles/301-TDD-Basics-Bowling-Game-Kata
+<> http://butunclebob.com/files/downloads/Bowling%20Game%20Kata.ppt
+<> https://github.com/k00ka/bowling-game-kata/tree/david_final
