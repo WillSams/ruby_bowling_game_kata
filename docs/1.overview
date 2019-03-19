@@ -1,5 +1,6 @@
 mkdir my_project && cd my_project
-touch bowling_game.rb #our main deliverable :)
+mkdir app
+touch app/game.rb #our main deliverable :)
 
 source ~/.rvm/scripts/rvm  #See my Rails setup gist to see why I'm using Rvm. Skip if you aren't using Rvm.
 
@@ -15,10 +16,8 @@ touch spec/spec_helper.rb #configuration for our tests
 touch spec/bowling_game_spec.rb #our unit test file.  Right all tests here.
 cat > spec/spec_helper.rb << EOF
 RSpec.configure do |config|
-  config.color_enabled = true   #use color in STDOUT
-  config.tty = true             #use color also in pagers and files
-  config.formatter = :documentation # :progress, :html, :textmate
-  config.order = 'random'  #random test order
+  config.warnings = true
+  config.order = :random  #random test order, we want to ensure no order dependency
 EOF
 
 touch .rspec

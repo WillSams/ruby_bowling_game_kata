@@ -21,7 +21,7 @@ describe Game do
   end
 end
 
-2.  Next, let's test the roll() and score() method:
+2.  Next, let's test the roll() and scorei() method:
       * roll is called each time the player rolls, taking pins knocked down as an arg.
       * score is called at end of game and returns the total score
     to your spec class
@@ -54,7 +54,7 @@ end
       end
     end
 
-    Add/change in Game class
+    Add/ch ange in Game class
     -----------------------
     def initialize
       @total_score = 0
@@ -76,12 +76,12 @@ end
     -------------------
     def initialize
       @rolls = Array.new(21, 0)
-      @current_roll = 0
+      @current_roll_index = 0
     end
 
     def roll(pins)
       @rolls[@current_roll] = pins
-      @current_roll = @current_roll + 1
+      @current_roll_index = @current_roll_index + 1
     end
 
     def score
@@ -111,7 +111,7 @@ end
       frame_index = 0
 
       10.times do  #10 frames
-        if spare?(frame_index)
+  i      if spare?(frame_index)
           total_score += 10 + @rolls[frame_index + 2]
           frame_index +=2
         else
