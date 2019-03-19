@@ -1,6 +1,6 @@
 set -o nounset                        # unset variables are errors
 
-__ScriptVersion="2018.12.08"
+__ScriptVersion="2018.02.19"
 __ScriptName="bowling-ruby_tdd_kata-Debian.sh"
 __ScriptFullName="$0"
 
